@@ -1,68 +1,60 @@
-## Objective
-To develop a white-label, vertical solution for managing both offline and online communities in a DAO (Decentralized Autonomous Organization) format on Mina. This solution will integrate critical functions such as messaging, voting, transactions, and bulletin boards, facilitating seamless internal operations within community-driven ecosystems. The initial implementation will begin with the Wind & Flow DAO in Korea, with the potential to scale and adapt the solution to other communities globally.
+# Wind & Flow DAO
 
-## Vision
-The community we aim to build is one that serves as a psychologically safe container. This begins with Wind & Flow DAO in Korea, whose mission is to create a blockchain-based school, community, and network state where each member can realize their highest self through learning, experience, and fellowship.
+**바람과 흐름의 길 (風流道)**
 
-Wind & Flow DAO will start as a series of regular offline and online meetups focusing on authentic relating, authentic movement, and other rituals. Over time, it aims to evolve into a co-living, co-housing community, and eventually a network state with its own internal economy. This vision will be sustained by a Community Inclusive Currency (CIC), fostering both personal growth and collective prosperity.
+Network State OS for relationship-based communities.
 
-## Approach
-The project will take a holistic approach, integrating three key layers:
+> Governance begins when we see one another.
 
-### Cultural/Ritual Layer
-This foundational layer will establish the cultural practices and rituals necessary to create a psychologically safe environment. It is within this space that individuals can openly share their vulnerabilities and support each other’s healing and growth. The tools and practices applied in this layer include:
+---
 
-#### Authentic Relating: 
-Facilitating deep, meaningful connections through structured communication practices.
-#### Authentic Movement: 
-Encouraging self-expression and emotional release through movement-based activities.
-#### Educational Content on Healing and Self-Exploration: 
-Continuous production of educational content focused on healing, self-exploration, and personal development, ensuring that members have the resources needed for their growth.
+### What We Build
 
-### Software/Blockchain Layer:
-The blockchain layer will support the internal community economy and governance through the following features:
-#### Community Inclusive Currency (CIC): 
-Tokens will be issued based on participation in regular gatherings, creating a direct link between community involvement and economic value.
-#### Internal Marketplace:
-Members can buy and sell products or services using CIC tokens, fostering a self-sustaining economy.
-#### Governance: 
-The DAO will enable members to participate in governance through secure, privacy-preserving voting mechanisms.
-#### Reputation and Feedback System: 
-Members will be able to rate others, events, or express feelings and appreciation, either anonymously or with identity disclosure, ensuring a balanced and fair community dynamic.
+**W&F OS** is an open-source framework for communities that want to govern themselves through relationships, not tokens. Identity, membership, social graphs, and economic primitives — built on Base L2, designed for real villages.
 
-### Hardware Layer:
-The hardware layer will focus on the design and development of physical spaces where the Wind & Flow DAO community can live and interact. This includes the creation of co-living and co-housing arrangements, as well as co-villages that foster communal living and shared values. Key components of this layer include:
-#### Co-Living and Co-Housing Design: 
-Developing residential spaces that support communal living while allowing for individual privacy. These spaces will be designed to encourage interaction and collaboration among community members.
-#### Community Halls: 
-Dedicated spaces for ceremonies, rituals, and community gatherings. These halls will serve as the heart of the community, providing a place for members to connect, share, and grow together.
-#### Shared Dining Facilities: 
-Communal kitchens and dining areas where members can prepare and share meals, reinforcing the bonds within the community.
-#### Sustainability Features: 
-Integration of sustainable building practices and technologies to ensure that the physical infrastructure aligns with the DAO’s values of harmony with nature and sustainable living.
+### Architecture
 
-## Immediate Follow-Up
-To further develop and refine this blueprint, the next steps will include participation in the Funding the Commons Hacker Residency Program taking place from October 7th to 31st at the 4seas community in Chiang Mai. This residency will provide the opportunity to complete the Wind & Flow DAO blueprint and prepare for its practical implementation.
-Additional Notes
-Current Status on Mina: We have recently launched a Block Producer (BP) node on the Mina testnet and are now preparing to deploy a Snark Worker. Once we receive staking, those funds will be directed towards development costs for the Wind & Flow DAO.
+```
+L4  Applications     Your apps (Village Hall, marketplaces, bots)
+L3  W&F OS           This framework. Seven domains. One SDK.
+L2  Base (Optimism)  Low-cost on-chain anchoring
+L1  Ethereum         Security and finality
+```
 
-## Next Steps
-### Begin with Wind & Flow DAO:
-The white-label solution will be piloted with Wind & Flow DAO in Korea. This community will serve as a testbed for the DAO’s cultural, technological, and physical infrastructure, allowing for iterative development and refinement.
-### Finalize the Whitepaper:
-We are currently working on finalizing a comprehensive whitepaper that will detail the vision, structure, and implementation strategy across all three layers, with specific focus on the Wind & Flow DAO's roadmap.
-### Engage with the Mina Ecosystem:
-As we refine our approach, we will seek to collaborate with the Mina community, leveraging its privacy-focused, efficient blockchain technology to bring this vision to life.
-### Pilot Program:
-Once the whitepaper is complete, we will initiate a pilot program to test the solution in Wind & Flow DAO, gathering feedback and iterating on the design. The successful implementation in Korea will serve as a blueprint for expanding to other communities, potentially scaling into a global network of interconnected DAOs.
+### Repositories
 
-<!--
+| Repo | Description | Status |
+|------|-------------|--------|
+| **[wf-os](https://github.com/Wind-Flow-DAO/wf-os)** | L3 Framework: DB schema, smart contracts, TypeScript SDK | Active |
+| **[village-hall](https://github.com/Wind-Flow-DAO/village-hall)** | L4 App: Passport, Visa, NIM profiles, Sodo pages | Active |
 
-**Here are some ideas to get you started:**
+### First Deployment
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+[Daltteuneun Village (달뜨는마을)](https://windandflow.xyz/sodo/sinwolri) — Inje, South Korea. A village cooperative experimenting with digital citizenship for relationship-based population.
+
+### The Idea
+
+Most DAOs start with tokens. We start with recognition.
+
+Someone sees your contribution. Someone witnesses your presence. Someone records your story. These acts of recognition accumulate into trust, trust becomes legitimacy, and legitimacy becomes governance.
+
+```
+recognition → memory → legitimacy → governance → civilization
+```
+
+This is not new. It is how every civilization in history was built. We are just putting it on-chain.
+
+### Tech
+
+- **On-chain**: Base L2, Solidity (Passport SBT, Visa NFT), ERC-5192/721/4906
+- **Off-chain**: Supabase/PostgreSQL, Next.js, Privy (account abstraction)
+- **SDK**: `@windandflow/sdk` — TypeScript, all seven domains
+
+### Links
+
+- [System Specification v0.7](https://github.com/Wind-Flow-DAO/wf-os/blob/main/docs/WF-OS-Spec-v0.7.md)
+- [Recognition Principle](https://github.com/Wind-Flow-DAO/wf-os/blob/main/docs/Recognition_Principle.md)
+
+### License
+
+MIT. Use it. Fork it. Build your own network state.
